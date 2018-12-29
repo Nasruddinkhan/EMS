@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+
+<tiles-definitions>  
+ 
+   <!-- Base Definition -->
+   <definition name="base-definition" 
+       template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />  
+   </definition>  
+   <!-- Home Page -->
+   <definition name="home" extends="base-definition">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />  
+   </definition>  
+    <!-- View Profile Page -->
+   <definition name="view_employee" extends="base-definition">  
+       <put-attribute name="title" value="Profile" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/employee/view_employee.jsp" />  
+   </definition>  
+  <!-- inout_time Page -->
+   <definition name="inout_time" extends="base-definition">  
+       <put-attribute name="title" value="In-Out-Time" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/inout_time.jsp" />  
+   </definition>
+    <!-- inout_time Page -->
+   <definition name="work_remark" extends="base-definition">  
+       <put-attribute name="title" value="Work Remark" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/work/work_remark.jsp" />  
+   </definition>
+   <!--  Employees-->
+    <definition name="employee" extends="base-definition">  
+       <put-attribute name="title" value="Employees" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/employee/employee.jsp" />  
+   </definition>
+     <definition name="add_employee" extends="base-definition">  
+       <put-attribute name="title" value="Add Employees" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/employee/add_employee.jsp" />  
+   </definition>
+   <!--  Add work remark-->
+    <definition name="add_work_status" extends="base-definition">  
+       <put-attribute name="title" value="Add Remark" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/work/add_work_status.jsp" />  
+   </definition>
+   <!--  Add personal details-->
+    <definition name="add_personal" extends="base-definition">  
+       <put-attribute name="title" value="Add Personal details" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/application/add_personal.jsp" />  
+   </definition>
+   
+   <!--  Add education details-->
+    <definition name="add_education" extends="base-definition">  
+       <put-attribute name="title" value="Add Education details" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/application/add_education.jsp" />  
+   </definition>
+   
+    <!--  Add break details-->
+    <definition name="add_break" extends="base-definition">  
+       <put-attribute name="title" value="Add Break details" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/application/add_break.jsp" />  
+   </definition>
+   
+    <!--  Add declare details-->
+    <definition name="add_declaration" extends="base-definition">  
+       <put-attribute name="title" value="Add declaration details" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/application/add_declaration.jsp" />  
+   </definition>
+   
+    <!--  Add declare details-->
+    <definition name="add_work" extends="base-definition">  
+       <put-attribute name="title" value="Add Work details" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/application/add_work.jsp" />  
+   </definition>
+   <!--  -->
+    <!--  Address  details-->
+    <definition name="add_address" extends="base-definition">  
+       <put-attribute name="title" value="Add Work details" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/application/add_address.jsp" />  
+   </definition>
+   <!--  -->
+</tiles-definitions>
